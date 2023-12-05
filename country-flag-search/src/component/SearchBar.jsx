@@ -14,7 +14,7 @@ const SearchBar = () => {
     const [countries,setCountries]=useState([])
     const [loading,setLoading]=useState(false)
 
-    const deCurrency=useDebounce(currency,1000)
+    const deCurrency=useDebounce(currency,1000).trim().toLowerCase()
    
     useEffect(()=>{
 
